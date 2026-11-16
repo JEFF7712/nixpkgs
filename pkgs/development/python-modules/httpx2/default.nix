@@ -43,14 +43,14 @@
 
 buildPythonPackage (finalAttrs: {
   pname = "httpx2";
-  version = "2.16.0";
+  version = "2.16.2";
   pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pydantic";
     repo = "httpx2";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-oG7mYYb1ZdrcVcTAPUFZx/Ggge7E1Ng7HyrT8YCF+nE=";
+    hash = "sha256-2wvTzI8E+/QLzlwPKWLqI6uxgGTP6/9Sb2/q4u872tw=";
   };
 
   patches = [
